@@ -1,4 +1,4 @@
-const kata = require("../LuckyNumber");
+const kata = require("../LuckCheck");
 
 test("GivenTicketHasDifferentFormatThanDecimal_WhenLuckyNumberCheck_ThenThrowError", () => { 
     expect(() => kata.luckyNumber("DDD334")).toThrow(Error);
