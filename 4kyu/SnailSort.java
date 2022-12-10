@@ -12,6 +12,9 @@ public class SnailSort {
         int[][] array
                 = {{1, 2, 3},
                 {4, 5, 6},
+
+
+
                 {7, 8, 9}};
         final int EXPECTED_SIZE = 9;
         assertThat(snail(array).length, is(EXPECTED_SIZE));
@@ -23,9 +26,8 @@ public class SnailSort {
                 = {{1, 2, 3},
                 {4, 5, 6},
                 {7, 8, 9}};
-        int[] expectedSet = { 1, 2, 3, 6, 9, 8, 7, 4, 5 };
-        final int EXPECTED_SIZE = 9;
-        assertThat(snail(array), equalTo(expectedSet));
+        final int[] EXPECTED_SET = { 1, 2, 3, 6, 9, 8, 7, 4, 5 };
+        assertThat(snail(array), equalTo(EXPECTED_SET));
     }
 
     @Test
@@ -35,9 +37,8 @@ public class SnailSort {
                 {4, 5, 6, 4},
                 {7, 8, 9, 7},
                 {7, 8, 9, 7}};
-        int[] expectedSet = { 1, 2, 3, 1, 4, 7, 7, 9, 8, 7, 7, 4, 5, 6, 9, 8 };
-        final int EXPECTED_SIZE = 9;
-        assertThat(snail(array), equalTo(expectedSet));
+        final int[] EXPECTED_SET = { 1, 2, 3, 1, 4, 7, 7, 9, 8, 7, 7, 4, 5, 6, 9, 8 };
+        assertThat(snail(array), equalTo(EXPECTED_SET));
     }
 
     private static int[] snail(int[][] matrix) {
